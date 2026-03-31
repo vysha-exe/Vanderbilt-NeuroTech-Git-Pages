@@ -2,7 +2,7 @@
 
 Static site for [Vanderbilt NeuroTech](https://github.com/vysha-exe/Vanderbilt-NeuroTech-Git-Pages), built with [Jekyll](https://jekyllrb.com/) so we get a **blog-style Updates** section without any backend. GitHub Pages builds it automatically on every push.
 
-**Live URL (after Pages is enabled):** `https://vysha-exe.github.io/Vanderbilt-NeuroTech-Git-Pages/`
+**Live URL:** `https://vysha-exe.github.io/Vanderbilt-NeuroTech-Git-Pages/`
 
 ## Repo layout (no separate frontend/backend)
 
@@ -78,4 +78,4 @@ Open `http://127.0.0.1:4000/Vanderbilt-NeuroTech-Git-Pages/` (Jekyll prints the 
 
 ## Theme notes
 
-The design uses **black** with **gold** (Vanderbilt association, readable on dark UI) and **teal/cyan** accents (signals, tech, “neural” energy). CSS variables at the top of `assets/css/style.css` control colors if you want to tweak.
+The design uses **black** with **gold** and **teal/cyan** accents. CSS variables at the top of `assets/css/style.css` control colors if you want to tweak.
