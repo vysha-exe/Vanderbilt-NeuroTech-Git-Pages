@@ -20,6 +20,9 @@ layout: default
     {% if page.docs %}
     <a class="btn btn-ghost" href="{{ page.docs }}" target="_blank" rel="noopener noreferrer">Documentation</a>
     {% endif %}
+    {% if page.video_url and page.video_url != "" %}
+    <a class="btn btn-ghost" href="{{ page.video_url }}" target="_blank" rel="noopener noreferrer">Tutorial video</a>
+    {% endif %}
   </div>
 
   <div class="project-body prose">

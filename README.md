@@ -84,10 +84,10 @@ order: 10
 github: https://github.com/org/repo
 website: https://example.com
 ---
-Longer description in Markdown. Links appear as buttons when `github` / `website` / `docs` are set.
+Longer description in Markdown. Links appear as buttons when `github` / `website` / `docs` / `video_url` are set.
 ```
 
-Use **`order:`** (number) to sort cards on `/projects/`. Leave **`github:`** blank to hide the GitHub button.
+Use **`order:`** (number) to sort cards on `/projects/`. Leave **`github:`** blank to hide the GitHub button. Set **`video_url:`** (e.g. YouTube) to show a **Tutorial video** button; remove the placeholder HTML block in that project’s Markdown once the link is live if you like.
 
 ## Photo gallery
 
