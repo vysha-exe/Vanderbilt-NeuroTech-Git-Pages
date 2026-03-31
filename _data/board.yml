@@ -1,5 +1,4 @@
-# Add image paths under assets/images/board/ when ready, e.g. "assets/images/board/paige.jpg"
-# Leave photo empty to show initials placeholder
+# Photos live under assets/images/board/ — set photo to that path (see Paige: no photo yet)
 # Set show_major: false for faculty/advisers without a student major line
 - role: President
   name: Paige Blackwell
@@ -9,24 +8,24 @@
 - role: Vice President
   name: Liam Regan
   major: Biomedical Engineering
-  photo:
+  photo: assets/images/board/liam.jpg
 
 - role: Treasurer
   name: Daniel Mattar
   major: Electrical Engineering
-  photo:
+  photo: assets/images/board/daniel.jpg
 
 - role: Secretary
   name: Sam Kassan
-  major: ""
-  photo:
+  major: "Minor in Digital Fabrication"
+  photo: assets/images/board/sam.jpg
 
 - role: Adviser (formerly Coaches Fall '22)
   name: Christos Constantinidis
   show_major: false
-  photo:
+  photo: assets/images/board/advisor.jpg
 
 - role: Director of Marketing and Outreach
   name: Vyshalini Rajendran
   major: Computer Science and Neuroscience
-  photo:
+  photo: assets/images/board/vysha.jpg
