@@ -1,0 +1,31 @@
+# Add image paths under assets/images/board/ when ready, e.g. "board/paige.jpg"
+# Leave photo empty to show initials placeholder
+- role: President
+  name: Paige Blackwell
+  major: ""
+  photo:
+
+- role: Vice President
+  name: Liam Regan
+  major: ""
+  photo:
+
+- role: Treasurer
+  name: Daniel Mattar
+  major: ""
+  photo:
+
+- role: Secretary
+  name: Sam Kassan
+  major: ""
+  photo:
+
+- role: Adviser (formerly Coaches Fall '22)
+  name: Christos Constantinidis
+  major: ""
+  photo:
+
+- role: Director of Marketing and Outreach
+  name: Vyshalini Rajendran
+  major: ""
+  photo:

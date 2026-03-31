@@ -1,0 +1,81 @@
+# Vanderbilt NeuroTech — GitHub Pages
+
+Static site for [Vanderbilt NeuroTech](https://github.com/vysha-exe/Vanderbilt-NeuroTech-Git-Pages), built with [Jekyll](https://jekyllrb.com/) so we get a **blog-style Updates** section without any backend. GitHub Pages builds it automatically on every push.
+
+**Live URL (after Pages is enabled):** `https://vysha-exe.github.io/Vanderbilt-NeuroTech-Git-Pages/`
+
+## Repo layout (no separate frontend/backend)
+
+GitHub Pages only serves **static files**. There is no server or API, so you do **not** need `frontend/` and `backend/` folders. Everything lives in the usual Jekyll layout:
+
+| Path | Purpose |
+|------|---------|
+| `_layouts/`, `_includes/` | HTML templates |
+| `_posts/` | Monthly updates (Markdown) |
+| `_data/board.yml` | Board names, roles, majors, optional photo paths |
+| `assets/css/`, `assets/js/` | Styles and scripts |
+| `assets/images/board/` | Drop headshots here, then reference in `board.yml` |
+
+## Enable GitHub Pages
+
+1. On GitHub: **Settings → Pages**.
+2. **Build and deployment → Source:** GitHub Actions is *not* required for this setup; use **Deploy from a branch**.
+3. **Branch:** `main`, folder **`/ (root)`**.
+4. Save. The first build may take a minute; check **Actions** or the Pages settings for the published URL.
+
+## Push this project to the remote
+
+If this folder is not yet a git repo:
+
+```powershell
+cd path\to\NeuroTech-Github-Pages
+git init
+git add .
+git commit -m "Add Vanderbilt NeuroTech Jekyll site"
+git branch -M main
+git remote add origin https://github.com/vysha-exe/Vanderbilt-NeuroTech-Git-Pages.git
+git push -u origin main
+```
+
+If the remote already has a commit (e.g. only a README), either `git pull origin main --rebase` first, or follow GitHub’s instructions to merge.
+
+## Monthly blog posts
+
+1. Create a file in `_posts/` named **`YYYY-MM-DD-short-title.md`** (date = post date).
+2. Use this front matter:
+
+```yaml
+---
+layout: post
+title: "April 2026 — Your title"
+date: 2026-04-01
+---
+
+Your markdown content here.
+```
+
+3. Commit and push. The **Updates** page and home page will list new posts automatically.
+
+## Board photos and majors
+
+Edit **`_data/board.yml`**:
+
+- Set **`major:`** to each person’s major (e.g. `Computer Science`).
+- Add **`photo:`** as a path under the site root, e.g. `assets/images/board/paige.jpg`, after adding the image file.
+
+If **`photo`** is empty, the site shows **initials** in a circular placeholder.
+
+## Local preview (optional)
+
+Install Ruby + Bundler, then:
+
+```powershell
+bundle install
+bundle exec jekyll serve
+```
+
+Open `http://127.0.0.1:4000/Vanderbilt-NeuroTech-Git-Pages/` (Jekyll prints the exact URL).
+
+## Theme notes
+
+The design uses **black** with **gold** (Vanderbilt association, readable on dark UI) and **teal/cyan** accents (signals, tech, “neural” energy). CSS variables at the top of `assets/css/style.css` control colors if you want to tweak.

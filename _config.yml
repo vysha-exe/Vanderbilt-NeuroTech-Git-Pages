@@ -1,0 +1,16 @@
+title: Vanderbilt NeuroTech
+description: Vanderbilt's student organization at the intersection of neuroscience and technology.
+url: https://vysha-exe.github.io
+baseurl: /Vanderbilt-NeuroTech-Git-Pages
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

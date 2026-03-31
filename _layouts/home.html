@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Student organization · Vanderbilt University</p>
+      <h1>Build the future of <span class="text-gradient">brain–tech</span></h1>
+      <p class="lede">We connect students across neuroscience, engineering, and computer science through projects, workshops, and a community obsessed with neural interfaces, signal processing, and open science.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{ site.baseurl }}/blog/">Monthly updates</a>
+        <a class="btn btn-ghost" href="{{ site.baseurl }}/board/">Meet the board</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="orbital">
+        <span class="ring ring-a"></span>
+        <span class="ring ring-b"></span>
+        <span class="ring ring-c"></span>
+        <div class="core">N</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <h2>Latest updates</h2>
+    <p class="section-sub">Monthly posts from the team—events, build logs, and what we are learning.</p>
+  </div>
+  <div class="post-cards">
+    {% assign recent = site.posts | slice: 0, 3 %}
+    {% for post in recent %}
+    <article class="post-card">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 22 }}</p>
+      <a class="read-more" href="{{ post.url | relative_url }}">Read post</a>
+    </article>
+    {% endfor %}
+    {% if site.posts.size == 0 %}
+    <p class="empty-hint">Posts will appear here once you add files under <code>_posts/</code>.</p>
+    {% endif %}
+  </div>
+  <p class="section-cta"><a href="{{ site.baseurl }}/blog/">View all updates →</a></p>
+</section>
+
+<section class="section section-dim">
+  <div class="two-col">
+    <div>
+      <h2>Why NeuroTech?</h2>
+      <p class="muted">From BCI hack nights to journal clubs, we make space for hands-on learning and honest conversation about where neurotechnology is headed—and who it should serve.</p>
+    </div>
+    <ul class="feature-list">
+      <li><span class="fi">01</span> Workshops &amp; guest talks</li>
+      <li><span class="fi">02</span> Project teams &amp; build sessions</li>
+      <li><span class="fi">03</span> Partnerships across campus</li>
+    </ul>
+  </div>
+</section>

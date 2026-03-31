@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="page-intro">
+  <h1>{{ page.title }}</h1>
+  <p class="lede">Monthly notes from Vanderbilt NeuroTech—events, projects, and community news.</p>
+</div>
+
+<ul class="post-list post-list-wide">
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">
+      <span class="post-list-date">{{ post.date | date: "%Y · %b" }}</span>
+      <span class="post-list-title">{{ post.title }}</span>
+      <span class="post-list-excerpt">{{ post.excerpt | strip_html | truncatewords: 18 }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if site.posts.size == 0 %}
+<p class="empty-hint">Add a new file in <code>_posts/</code> named <code>YYYY-MM-DD-your-title.md</code> with YAML front matter (<code>title</code> and <code>layout: post</code>).</p>
+{% endif %}
