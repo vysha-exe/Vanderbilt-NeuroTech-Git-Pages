@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="page-intro">
+  <h1>{{ page.title }}</h1>
+  <p class="lede">{{ page.lede | default: "Active and past builds from our community. Each card links to a full write-up." }}</p>
+</div>
+
+{% assign sorted = site.projects | sort: "order" %}
+<div class="project-cards">
+  {% for p in sorted %}
+  <article class="project-card">
+    <a class="project-card-link" href="{{ p.url | relative_url }}">
+      <h2>{{ p.title }}</h2>
+      {% if p.short_description %}
+      <p>{{ p.short_description }}</p>
+      {% endif %}
+      <div class="project-card-meta">
+        {% if p.status %}
+        <span class="project-status">{{ p.status }}</span>
+        {% endif %}
+        {% if p.github and p.github != "" %}
+        <span class="project-github-hint">GitHub →</span>
+        {% endif %}
+      </div>
+    </a>
+  </article>
+  {% endfor %}
+</div>
+
+{% if site.projects.size == 0 %}
+<p class="empty-hint">Add a Markdown file in <code>_projects/</code> with front matter (<code>title</code>, <code>short_description</code>, <code>github</code>, etc.). See existing samples or the README.</p>
+{% endif %}

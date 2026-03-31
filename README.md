@@ -12,9 +12,14 @@ GitHub Pages only serves **static files**. There is no server or API, so you do 
 |------|---------|
 | `_layouts/`, `_includes/` | HTML templates |
 | `_posts/` | Monthly updates (Markdown) |
-| `_data/board.yml` | Board names, roles, majors, optional photo paths |
+| `_projects/` | Project detail pages (Markdown; linked from **Projects**) |
+| `_data/board.yml` | Team names, roles, majors, optional `show_major: false`, photos |
+| `_data/gallery.yml` | List of club photos (`file` + optional `caption`) |
 | `assets/css/`, `assets/js/` | Styles and scripts |
-| `assets/images/board/` | Drop headshots here, then reference in `board.yml` |
+| `assets/images/board/` | Headshots → paths in `board.yml` |
+| `assets/images/gallery/` | Club photos → paths in `gallery.yml` |
+
+**Main URLs:** `/team/` (Our Team), `/projects/`, `/gallery/` (Photos), `/contact/`. Old `/board/` redirects to `/team/`.
 
 ## Enable GitHub Pages
 
@@ -56,14 +61,44 @@ Your markdown content here.
 
 3. Commit and push. The **Updates** page and home page will list new posts automatically.
 
-## Board photos and majors
+## Team photos and majors
 
 Edit **`_data/board.yml`**:
 
-- Set **`major:`** to each person’s major (e.g. `Computer Science`).
+- Set **`major:`** for student officers; for faculty/advisers with no major line, set **`show_major: false`** (hides the major row entirely).
 - Add **`photo:`** as a path under the site root, e.g. `assets/images/board/paige.jpg`, after adding the image file.
 
 If **`photo`** is empty, the site shows **initials** in a circular placeholder.
+
+## Projects
+
+Add a Markdown file under **`_projects/`** with front matter, for example:
+
+```yaml
+---
+layout: project
+title: My project
+short_description: One line for the card on the Projects page.
+status: Active
+order: 10
+github: https://github.com/org/repo
+website: https://example.com
+---
+Longer description in Markdown. Links appear as buttons when `github` / `website` / `docs` are set.
+```
+
+Use **`order:`** (number) to sort cards on `/projects/`. Leave **`github:`** blank to hide the GitHub button.
+
+## Photo gallery
+
+1. Add images under **`assets/images/gallery/`**.
+2. Edit **`_data/gallery.yml`** and append to **`items:`**:
+
+```yaml
+items:
+  - file: assets/images/gallery/your-photo.jpg
+    caption: Optional caption
+```
 
 ## Local preview (optional)
 

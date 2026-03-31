@@ -1,0 +1,6 @@
+# Club photo gallery — add files under assets/images/gallery/ then list them here.
+# Example:
+# items:
+#   - file: assets/images/gallery/welcome-week.jpg
+#     caption: Welcome week tabling
+items: []

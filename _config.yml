@@ -5,6 +5,11 @@ baseurl: /Vanderbilt-NeuroTech-Git-Pages
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

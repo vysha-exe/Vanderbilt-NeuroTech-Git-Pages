@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="project-detail">
+  <header class="project-detail-header">
+    <p class="eyebrow"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p>
+    <h1>{{ page.title }}</h1>
+    {% if page.status %}
+    <p class="project-detail-status">{{ page.status }}</p>
+    {% endif %}
+  </header>
+
+  <div class="project-links-bar">
+    {% if page.github and page.github != "" %}
+    <a class="btn btn-primary" href="{{ page.github }}" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+    {% endif %}
+    {% if page.website %}
+    <a class="btn btn-ghost" href="{{ page.website }}" target="_blank" rel="noopener noreferrer">Website / demo</a>
+    {% endif %}
+    {% if page.docs %}
+    <a class="btn btn-ghost" href="{{ page.docs }}" target="_blank" rel="noopener noreferrer">Documentation</a>
+    {% endif %}
+  </div>
+
+  <div class="project-body prose">
+    {{ content }}
+  </div>
+</article>

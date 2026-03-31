@@ -27,6 +27,7 @@ layout: default
     </div>
     <p class="board-role">{{ member.role }}</p>
     <h2 class="board-name">{{ member.name }}</h2>
+    {% unless member.show_major == false %}
     <p class="board-major">
       {% if member.major and member.major != '' %}
         {{ member.major }}
@@ -34,6 +35,7 @@ layout: default
         <span class="major-placeholder">Major — add in _data/board.yml</span>
       {% endif %}
     </p>
+    {% endunless %}
   </article>
   {% endfor %}
 </div>
