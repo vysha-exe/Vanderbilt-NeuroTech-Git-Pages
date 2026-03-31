@@ -18,7 +18,5 @@ In this project we **assemble the Ultra Cortex Mark V1** EEG headset, then use t
 ### Assembly tutorial video
 
 <div class="video-placeholder" markdown="0">
-  <p><strong>Video coming soon.</strong> After you upload a walkthrough (e.g. YouTube), edit <code>_projects/openbci-eeg-headset-assembly.md</code> and set <code>video_url:</code> in the front matter to the link—a <strong>Tutorial video</strong> button will appear next to the other project links.</p>
+  <p><strong>Tutorial video coming soon.</strong> Ask the board for a live walkthrough or the latest assembly checklist.</p>
 </div>
-
-If you are a member, ask the board for the latest draft checklist or a live walkthrough in the meantime.

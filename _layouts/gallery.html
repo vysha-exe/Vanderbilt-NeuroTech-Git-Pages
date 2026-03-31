@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="page-intro">
   <h1>{{ page.title }}</h1>
-  <p class="lede">Add photos under <code>assets/images/gallery/</code>, then list them in <code>_data/gallery.yml</code>.</p>
+  <p class="lede">Moments from meetings, builds, and events.</p>
 </div>
 
 {% if site.data.gallery.items and site.data.gallery.items.size > 0 %}
@@ -21,12 +21,5 @@ layout: default
   {% endfor %}
 </div>
 {% else %}
-<div class="empty-hint gallery-empty">
-  <p><strong>No photos yet.</strong> To add some:</p>
-  <ol>
-    <li>Put image files in <code>assets/images/gallery/</code> (e.g. <code>assets/images/gallery/spring-social.jpg</code>).</li>
-    <li>Edit <code>_data/gallery.yml</code> and add entries under <code>items:</code> with <code>file:</code> and optional <code>caption:</code>.</li>
-    <li>Commit and push; the site will update automatically.</li>
-  </ol>
-</div>
+<p class="empty-hint gallery-empty">Photos coming soon.</p>
 {% endif %}

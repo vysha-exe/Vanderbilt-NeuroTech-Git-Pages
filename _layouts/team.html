@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="page-intro">
   <h1>{{ page.title }}</h1>
-  <p class="lede">Leadership for {{ site.title }}. Photos and majors can be updated in <code>_data/board.yml</code>.</p>
+  <p class="lede">Student officers and faculty who keep {{ site.title }} running.</p>
 </div>
 
 <div class="board-grid">
@@ -32,7 +32,7 @@ layout: default
       {% if member.major and member.major != '' %}
         {{ member.major }}
       {% else %}
-        <span class="major-placeholder">Major — add in _data/board.yml</span>
+        <span class="major-placeholder">Major TBD</span>
       {% endif %}
     </p>
     {% endunless %}
