@@ -11,4 +11,4 @@ Short month, big plans. We used February to align on semester goals: stronger in
 - Board roles finalized for the website and outreach.
 - Brainstorming session on spring events and lab tours.
 
-This post is a sample — replace with your real monthly notes anytime.
+This post is a sample — replace with your real notes anytime.

@@ -11,7 +11,7 @@ GitHub Pages only serves **static files**. There is no server or API, so you do 
 | Path | Purpose |
 |------|---------|
 | `_layouts/`, `_includes/` | HTML templates |
-| `_posts/` | Monthly updates (Markdown) |
+| `_posts/` | Blog / recent updates (Markdown) |
 | `_projects/` | Project detail pages (Markdown; linked from **Projects**) |
 | `_data/board.yml` | Team names, roles, majors, optional `show_major: false`, photos |
 | `_data/gallery.yml` | List of club photos (`file` + optional `caption`) |
@@ -46,7 +46,7 @@ git push -u origin main
 
 If the remote already has a commit (e.g. only a README), either `git pull origin main --rebase` first, or follow GitHub’s instructions to merge.
 
-## Monthly blog posts
+## Blog posts (recent updates)
 
 1. Create a file in `_posts/` named **`YYYY-MM-DD-short-title.md`** (date = post date).
 2. Use this front matter:
