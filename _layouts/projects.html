@@ -31,3 +31,11 @@ layout: default
 {% if site.projects.size == 0 %}
 <p class="empty-hint">Check back soon for new projects.</p>
 {% endif %}
+
+{% if content and content != "" %}
+<section class="tech-stack-section" aria-labelledby="tech-stack-heading">
+  <div class="tech-stack-inner prose">
+    {{ content }}
+  </div>
+</section>
+{% endif %}

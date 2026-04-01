@@ -1019,6 +1019,87 @@ a.contact-card:hover,
   margin-top: 0.5rem;
 }
 
+/* Projects page — tech stack */
+.tech-stack-section {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.tech-stack-inner {
+  max-width: 42rem;
+}
+
+.tech-stack-inner h2 {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  margin: 0 0 0.75rem;
+  color: var(--gold);
+}
+
+.tech-stack-intro {
+  margin: 0 0 2rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.tech-stack-intro a {
+  color: var(--cyan);
+}
+
+.tech-stack-groups {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tech-stack-groups > li {
+  margin-bottom: 1.75rem;
+}
+
+.tech-stack-groups > li:last-child {
+  margin-bottom: 0;
+}
+
+.tech-stack-groups h3 {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cyan-dim);
+  margin: 0 0 0.65rem;
+  font-weight: 600;
+}
+
+.tech-stack-tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-stack-tags li {
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(18, 18, 26, 0.85);
+  color: var(--text);
+}
+
+.tech-stack-inner.prose .tech-stack-groups,
+.tech-stack-inner.prose .tech-stack-tags {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.tech-stack-inner.prose .tech-stack-groups > li > ul {
+  margin-bottom: 0;
+}
+
 .video-placeholder {
   margin: 1.75rem 0;
   padding: 1.25rem 1.35rem;
