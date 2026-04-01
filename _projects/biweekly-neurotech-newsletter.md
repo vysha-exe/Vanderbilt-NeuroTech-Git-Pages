@@ -3,7 +3,7 @@ layout: project
 title: Biweekly Neurotech Newsletter
 short_description: Email updates every two weeks—events, reading picks, and what the club is up to.
 status: Active
-order: 3
+order: 4
 github: ""
 ---
 

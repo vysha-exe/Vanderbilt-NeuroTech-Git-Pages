@@ -3,7 +3,7 @@ layout: project
 title: Musepong
 short_description: Python game—Muse headset + blinks to nudge beta and play Pong on screen.
 status: Active
-order: 6
+order: 7
 github: ""
 ---
 
