@@ -3,7 +3,7 @@ layout: project
 title: EEG Analysis Tool
 short_description: Python tooling for OpenBCI Cyton + BrainFlow—stream, filter, visualize, and script analyses.
 status: In development
-order: 4
+order: 5
 github: https://github.com/dnxjcui/neurotech-vandy
 ---
 

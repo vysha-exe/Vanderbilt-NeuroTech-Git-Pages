@@ -3,7 +3,7 @@ layout: project
 title: OpenBCI EEG headset assembly
 short_description: Build the Ultra Cortex Mark V1 headset, use OpenBCI GUI to stream live EEG.
 status: Active
-order: 6
+order: 7
 github: ""
 ---
 
