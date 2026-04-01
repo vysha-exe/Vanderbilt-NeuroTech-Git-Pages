@@ -57,4 +57,4 @@ Continuously: **read EEG → update the music → log outcomes** so the system c
 
 ---
 
-No public repo yet. Use the primary button at the top of this page to express interest, or reach out via [Contact us]({{ site.baseurl }}/contact/) and mention **Brainwave music**.
+No public repo yet. Use **Join project** at the top of this page, or reach out via [Contact us]({{ site.baseurl }}/contact/) and mention **Brainwave music**.

@@ -3,7 +3,7 @@ layout: project
 title: Musodoro
 short_description: Muse2 EEG via LSL, Flask + Socket.IO backend, React UI—live band powers and adaptive beta alerts.
 status: Active
-order: 2
+order: 3
 github: https://github.com/vysha-exe/Musodoro
 ---
 

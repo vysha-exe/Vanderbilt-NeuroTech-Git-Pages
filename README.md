@@ -91,7 +91,7 @@ Longer description in Markdown. Links appear as buttons when `github` / `website
 
 Use **`order:`** (number) to sort cards on `/projects/`. Leave **`github:`** blank to hide the GitHub button. Set **`video_url:`** (e.g. YouTube) to show a **Tutorial video** button; remove the placeholder HTML block in that project’s Markdown once the link is live if you like.
 
-Optional **`signup_url:`** — Google Form (or similar) link; shows a **Sign up to collaborate** button. If **`status: Recruiting`** and **`signup_url`** is empty, the page shows **Express interest** instead (links to **Contact us**).
+Optional **`signup_url:`** — Google Form (or similar) link; shows a **Sign up to collaborate** button. If **`status: Recruiting`** and **`signup_url`** is empty, the page shows **Join project** instead (links to **Contact us**).
 
 ## Photo gallery
 
