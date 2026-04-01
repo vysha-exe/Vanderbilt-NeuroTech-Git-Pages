@@ -986,6 +986,12 @@ a.contact-card:hover,
   color: var(--gold);
 }
 
+.project-signup-hint {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cyan);
+}
+
 /* Project detail */
 .project-detail {
   max-width: 48rem;

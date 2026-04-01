@@ -21,6 +21,10 @@ layout: default
         {% endif %}
         {% if p.github and p.github != "" %}
         <span class="project-github-hint">GitHub →</span>
+        {% elsif p.signup_url and p.signup_url != "" %}
+        <span class="project-signup-hint">Sign up →</span>
+        {% elsif p.status == "Recruiting" %}
+        <span class="project-signup-hint">Recruiting →</span>
         {% endif %}
       </div>
     </a>
