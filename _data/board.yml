@@ -14,8 +14,6 @@
   name: Daniel Mattar
   major: Electrical Engineering
   photo: assets/images/board/daniel.jpg
-  # Adjust so the face sits centered in the circle (horizontal %, vertical %)
-  photo_position: "50% 42%"
 
 - role: Secretary
   name: Sam Kassan

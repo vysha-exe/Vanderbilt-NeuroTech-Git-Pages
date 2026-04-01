@@ -11,8 +11,7 @@ layout: default
   <article class="board-card">
     <div class="board-photo">
       {% if member.photo and member.photo != '' %}
-      {% assign img_pos = member.photo_position | default: "center center" %}
-      <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" width="280" height="280" loading="lazy" class="board-photo-img" style="object-position: {{ img_pos }};">
+      <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}" width="280" height="280" loading="lazy">
       {% else %}
       <div class="board-photo-placeholder" aria-hidden="true">
         {% assign parts = member.name | split: ' ' %}
