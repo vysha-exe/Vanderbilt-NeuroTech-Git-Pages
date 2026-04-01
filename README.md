@@ -15,11 +15,13 @@ GitHub Pages only serves **static files**. There is no server or API, so you do 
 | `_projects/` | Project detail pages (Markdown; linked from **Projects**) |
 | `_data/board.yml` | Team names, roles, majors, optional `show_major: false`, photos |
 | `_data/gallery.yml` | List of club photos (`file` + optional `caption`) |
+| `_data/newsletters.yml` | Newsletter archive (`issues:` with `date`, `title`, `url` or `file`) |
 | `assets/css/`, `assets/js/` | Styles and scripts |
+| `assets/files/newsletter/` | Optional PDFs linked from `newsletters.yml` |
 | `assets/images/board/` | Headshots → paths in `board.yml` |
 | `assets/images/gallery/` | Club photos → paths in `gallery.yml` |
 
-**Main URLs:** `/team/` (Our Team), `/projects/`, `/gallery/` (Photos), `/contact/`. Old `/board/` redirects to `/team/`.
+**Main URLs:** `/newsletter/`, `/team/` (Our Team), `/projects/`, `/gallery/` (Photos), `/contact/`. Old `/board/` redirects to `/team/`.
 
 ## Enable GitHub Pages
 
@@ -99,6 +101,22 @@ items:
   - file: assets/images/gallery/your-photo.jpg
     caption: Optional caption
 ```
+
+## Newsletter archive (`/newsletter/`)
+
+Edit **`_data/newsletters.yml`** and add under **`issues:`** (any order; the page sorts newest first):
+
+```yaml
+issues:
+  - date: 2026-03-31
+    title: "Spring planning + lab tour recap"
+    url: https://drive.google.com/file/d/...
+  - date: 2026-03-17
+    title: "Issue 11"
+    file: assets/files/newsletter/2026-03-17.pdf
+```
+
+Use **`url`** for Google Drive, Substack, Mailchimp archive links, etc., or **`file`** for a PDF committed under `assets/files/newsletter/`.
 
 ## Local preview (optional)
 

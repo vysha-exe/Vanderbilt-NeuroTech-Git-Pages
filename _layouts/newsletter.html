@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="page-intro">
+  <h1>{{ page.title }}</h1>
+  <p class="lede">{{ page.lede }}</p>
+</div>
+
+{% assign issues = site.data.newsletters.issues %}
+{% if issues and issues.size > 0 %}
+{% assign sorted = issues | sort: "date" | reverse %}
+<ul class="newsletter-archive">
+  {% for issue in sorted %}
+  <li>
+    {% if issue.url and issue.url != "" %}
+    <a href="{{ issue.url }}" target="_blank" rel="noopener noreferrer" class="newsletter-archive-row">
+      <time datetime="{{ issue.date }}">{{ issue.date | date: "%b %d, %Y" }}</time>
+      <span class="newsletter-archive-title">{{ issue.title }}</span>
+      <span class="newsletter-archive-action">View →</span>
+    </a>
+    {% elsif issue.file and issue.file != "" %}
+    <a href="{{ issue.file | relative_url }}" target="_blank" rel="noopener noreferrer" class="newsletter-archive-row">
+      <time datetime="{{ issue.date }}">{{ issue.date | date: "%b %d, %Y" }}</time>
+      <span class="newsletter-archive-title">{{ issue.title }}</span>
+      <span class="newsletter-archive-action">View →</span>
+    </a>
+    {% else %}
+    <div class="newsletter-archive-row newsletter-archive-row--muted">
+      <time datetime="{{ issue.date }}">{{ issue.date | date: "%b %d, %Y" }}</time>
+      <span class="newsletter-archive-title">{{ issue.title }}</span>
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="empty-hint">Past issues will show up here once they are added to the archive.</p>
+{% endif %}

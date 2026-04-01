@@ -15,4 +15,4 @@ Typical topics include:
 - Short blurbs on papers or tools worth knowing  
 - Project shout-outs and ways to get involved  
 
-There is no public GitHub repo for this—content is drafted by the board and sent through your usual campus channels. Want to contribute a segment? Mention it at a meeting or use the [Contact us]({{ site.baseurl }}/contact/) page.
+There is no public GitHub repo for this—content is drafted by the board and sent through your usual campus channels. **[Browse past issues]({{ site.baseurl }}/newsletter/)** on the archive page. Want to contribute a segment? Mention it at a meeting or use the [Contact us]({{ site.baseurl }}/contact/) page.
